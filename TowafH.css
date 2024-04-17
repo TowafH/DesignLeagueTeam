@@ -18,19 +18,6 @@ body{
 
 h1{
 font-family: "Crimson Pro", serif;
-color: white;
-}
-
-h2{
-color: white;
-}
-
-h3{
-  color: #D7BA89;
-}
-
-p{
-color: white;
 }
 
 /* ====== Initialize ====== */
@@ -83,4 +70,10 @@ font-weight: 900;
   min-width: 800px;
   margin: 0 auto;
   background-color: inherit;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 5rem: 0;
 }
