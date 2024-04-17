@@ -52,6 +52,10 @@ h1, h2, h3, .title{
   justify-content: center;
   align-items: center;
   width: calc(100vw / var(--g-ratio));
+  height:100vh;
+  min-width:800px;
+  margin:0 auto;
+  background-color: inherit; /*copy the color from the body*/
 }
 
 
