@@ -24,7 +24,7 @@ body{
 }
 
 h1{
-font-family:"Sedan", serif;
+font-family: "Sedan", serif;
 }
 /* ====== Initialize ====== */
 *, ::before, ::after{
@@ -33,7 +33,7 @@ font-family:"Sedan", serif;
   box-sizing:border-box;
 }
 ::root{
-  --accent-color:#34495e
+  --accent-color:#34495e;
   --bg-color: #ecf0f1;
   --sub-font: "Georgia", sans-serif;
   --main-font: "Sedan", serif;
