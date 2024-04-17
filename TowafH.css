@@ -1,5 +1,4 @@
 body{
-  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   background-color: #5a80d8;
 }
@@ -10,4 +9,17 @@ h3{
 
 #page1{
   text-align: center;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900
+
+.crimson-pro-<uniquifier> {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+h1{
+font-family: "Crimson Pro", serif;
 }
