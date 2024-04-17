@@ -1,25 +1,57 @@
 body{
   text-align: center;
-  background-color: #335094;
-}
-
-h3{
-  color: #D7BA89;
 }
 
 #page1{
   text-align: center;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 900
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 200 to 900 */
 
-.crimson-pro-<uniquifier> {
+.crimson-pro-<font-class> {
   font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
+
 h1{
 font-family: "Crimson Pro", serif;
+color: white;
+}
+
+h2{
+color: white;
+}
+
+h3{
+  color: #D7BA89;
+}
+
+p{
+color: white;
+}
+
+/* ====== Initialize ====== */
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::root{
+  --accent-color: #34495e;
+  --bg-color: #335094;
+  --sub-font: "Georgia", sans-serif;
+  --main-font: "Crimson Pro", serif;
+  --g-ratio: 1.618;
+}
+
+body{
+  font-family: var(--sub-font);
+  font-weight: 300;
+  background-color: var(--bg-color);
+  color: white;
+  font-size: 1.2rem;
 }
