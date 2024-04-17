@@ -1,6 +1,6 @@
 //Loader
 window.addEventListener('load', () => {
-  const loader = document.querySelector('.loader;);
+  const loader = document.querySelector('.loader');
   setTimeout(() => {
     loader.setAttribute('style', 'opacity: 0;');
   }, 500);
