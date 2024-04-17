@@ -12,7 +12,7 @@ body{
 .crimson-pro-<font-class> {
   font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -62,4 +62,13 @@ hr{
   height: 5px;
   background-color: #4495e;
   border: none;
+}
+
+h1, h2, h3, .title{
+font-family: var(main-font);
+font-weight: 900;
+}
+
+.title{
+  color: var(--accent-color);
 }
