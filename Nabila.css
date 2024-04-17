@@ -10,3 +10,11 @@ img{
   border-radius: 3%;
   border-color: #a6264c;
 }
+.lancelot-regular {
+  font-family: "Lancelot", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+  font-family: "Lancelot", serif;
+}
