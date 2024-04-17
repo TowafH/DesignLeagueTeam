@@ -11,3 +11,9 @@ img{
   border-color: #abcaf2;
   border-color: #166ddf;
 }
+.brygada-1918-<uniquifier> {
+  font-family: "Brygada 1918", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
