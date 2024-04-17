@@ -2,9 +2,6 @@ html {
   height: 100;
   width: 100;
 }
-body{
-  background-color: #ffb8c9ff;
-}
 img{
   border-radius: 3;
   border-color: #a6264c;
@@ -17,3 +14,45 @@ img{
 h1{
  font-family: "Kanit", sans-serif;
 }
+/*Initialize*/
+
+*, ::before, ::after {
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+::root{
+  --accent-color: #34495e;
+  --bg-color: #ecf0f1;
+  --sub-font: "georgia", sans-serif;
+  --main-font: "Kanit", sans-serif;
+  --g-ratio: 1.618;
+}
+body{
+  font-family: var(--sub-font);
+  font-weight: 300;
+  background-color: var(--bg-color);
+  color: #111;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
