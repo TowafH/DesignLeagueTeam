@@ -46,6 +46,13 @@ h1, h2, h3, .title{
   color: var(--accent-color);
 }
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw / var(--g-ratio));
+}
 
 
 
