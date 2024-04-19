@@ -137,5 +137,27 @@ this.changeBtns = () => {
 }
 
 // Add Floor
-const floor = document.createElement
+const floor = document.createElement('div');
+floor.setAttribute('class', 'floor');
+container.appendChild(floor);
+floor.innerHTML = 
+  'Name: ' +
+  ninja.name +
+  '\xa0\xa0\xa0Age: ' +
+  ninja.age +
+  '\xa0\xa0Height: ' +
+  ninja.height +
+  'px' +
+  '\xa0\xa0\xa0Color: ' +
+  ninja.color;
+};
+
+this.getAge();
+this.getHeight();
+this.getColor();
+
+ninja = new Ninjas(name, age, height, color);
+
+this.appendImg();
+this.changeBtns();
 };
