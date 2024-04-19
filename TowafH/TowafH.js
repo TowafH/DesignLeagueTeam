@@ -96,3 +96,23 @@ this.getHeight = () => {
     this.getHeight();
 }
 };
+
+this.getColor = () => {
+  color = prompt('Choose color: Red Blue Green') || 'red';
+  color = color.toLowerCase();
+  if(color === 'red' || color === 'blue' || color === 'green') {
+    return;
+} else {
+  this.getColor();
+}
+};
+
+this.appendImg = () => {
+  img = document.createElement('img');
+  let size = 'width:' + height + 'px;height;' + height + 'px;'
+  if(color === 'blue') {
+  img.setAttribute('src', 'img/ninja1.png');
+  img.setAttribute('style', size);
+container.appendChild(img);
+} else if ()
+};
