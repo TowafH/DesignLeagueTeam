@@ -104,8 +104,19 @@ funtion Ninjas(name, age, height, color) {
 
     this.appendImg = () => {
       img = document.createElement('img');
-      let size = 'width:' + height + ''
-  }
+      let size = 'width:' + height + 'px;height:' + height + 'px;';
+      if (color === 'blue') {
+        img.setAttribute('src', 'img/ninja1.png');
+        img.setAttribute('style', size);
+        container.appendchild(img);
+      } else if (color === 'red') {
+        img.setAttribute('src', 'img/ninja3.png');
+        img.setAttribute('style', size);
+        container.appendChild(img);
+      }
+  };
+
+    
 
 
 
