@@ -35,7 +35,7 @@ body {
   font-family: var(--sub-font);
   font-weight: 300;
   background-color: var(--bd-color);
-  color: lightseagreen;
+  color: #111;
   font-size: 1.2rem;
 }
 
