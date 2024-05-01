@@ -2,14 +2,6 @@ html {
   height: 100%;
   width: 100%;
 }
-body{
-  background-color: #a7b6cdff;
-  font-family: var(--sub-font);
-  font-weight: 300;
-  background-color: var(--bg-color);
-  color: #111;
-  font-size: 1.2rem;
-}
 img{
   border-radius: 3%;
   border-color: #abcaf2;
@@ -21,22 +13,30 @@ img{
   font-weight: <weight>;
   font-style: normal;
 }
-h1{
-font-family: "Brygada 1918", serif;
-}
+
 /* ====== Initialize ====== */
 *, ::before, ::after{
-  marging: 0 ;
+  margin: 0 ;
   padding: 0;
   box-sizing:border-box;
 }
+
 ::root{
-  --accent-color:#34495e
+  --accent-color:#34495e;
   --bg-color: #ecf0f1;
   --sub-font: "Georgia", sans-serif;
   --main-font: "Brygada 1918", serif;
   --g-ratio: 1.618;
 }
+
+body{
+  font-family: var(--sub-font);
+  font-weight: 300;
+  background-color: var(--bg-color);
+  color: #111;
+  font-size: 1.2rem;
+}
+
 hr{
   margin-top:0.5rem;
   width: 70px;
@@ -44,16 +44,18 @@ hr{
   background-color: #34495e;
   border:none;
 }
+
 h1, h2, h3, .title{
   font-family: var(--main-font);
   font-weight: 900;
 }
+
 .title{ 
-  color: var(--accent);
+  color: var(--accent-color);
 }
 
 .wrapper{
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -63,21 +65,19 @@ h1, h2, h3, .title{
   margin: 0 auto;
   background-color: inherit;
 }
+
 .container{
   width: 100%;
   height: 100%;
   padding: 5rem 0;
 }
 
-.lab-info h2,
-.lab-info h3 {
+.lab-info h2, .lab-info h3{
   font-weight: initial;
 }
-
-/*Main Content*/
-
-.top-container {
-  display:flex;
+/* =======Main Content========*/
+.top-container{
+  display: flex;
   width: 100%;
 }
 
@@ -85,7 +85,7 @@ h1, h2, h3, .title{
   width: 50%;
 }
 
-.content {
+.content{
   margin-top: 2rem;
   width: 100%;
   min-height: 500px;
@@ -94,27 +94,27 @@ h1, h2, h3, .title{
 }
 
 .btns-container{
-  width: 50%;
+  width: 50%:
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  position: relatve;
+  position: relative;
 }
 
-button {
+button{
   background-color: transparent;
   border: 2px solid var (--accent-color);
-  colro: var (--accent-color);
+  color: var(--accent-color);
   font-size: 2rem;
   padding: 0.25em 1em;
 }
 
-#btnCoin, #btnPipe, #btnPowerUp {
+#btnCoin, #btnPipe, #btnPowerUp{
   transition: all ease 100ms;
   outline: none !important;
 }
 
-img{
+img {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -134,54 +134,9 @@ img{
   align-items: center;
 }
 
-#coin-img{
+#coin-img {
   position: absolute;
   left: 50%;
   top: 70%;
   height: 60px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =======Main Content========*/
