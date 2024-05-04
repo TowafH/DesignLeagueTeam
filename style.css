@@ -1,8 +1,78 @@
-.slides{
-  position: absolute;
-  left: 5px;
+body {
+  font-family: Arial, sans-serif;
+  color: #DEAC80;
+  background-color: #F7DCB9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #B5C18E;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #B99470;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #41bf80;
+  margin: 20px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.slides {
   width: 50%;
 }
-body{
+
+.game {
+  width: 40%;
+}
+
+iframe {
+  width: 100%;
+}
+
+.game a {
+  text-decoration: none;
   color: #41bf80;
+}
+
+h1 {
+  color: #41bf80;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+h3 {
+  color: #41bf80;
+}
+
+p {
+  line-height: 1.6;
 }
