@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<style>
+
+body{
+background-color: #233c76;
+}
+
+h1{
+  color: navy;
+  font-size: 35x;
+}
+
+p{
+ font-size: 28px;
+ font-weight: bold;
+ color: white;
+}
+
+ button {
+  font-family: Georgia;
+  background-color: navy;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+
+}
+
+hr {
+border: 1px solid black;
+width: 700px;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid navy;
+  width: 150px;
+  color: navy;
+}
+
+ #heading{
+ margin: 0 auto;
+ align-items: center;
+ border: 1px solid white;
+ text-align: center;
+ margin: 0 auto;
+ height: 180px;
+ width: 700px;
+ background-color: #ddbc83;
+ border-radius: 25px;
+}
+
+ #lowerHeading{
+ margin: 0 auto;
+ align-items: center;
+ border: 1px solid white;
+ text-align: center;
+ margin: 0 auto;
+ height: 140px;
+ width: 700px;
+ background-color: #ddbc83;
+ border-radius: 25px;
+}
+
+ #box{
+ height: 100px;
+ width: 100px;
+ background-color: red;
+ margin: 0 auto;
+ border: 1px solid white;
+ border-radius: 25px;
+}
+
+#container{
+  background-color: green;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+#animate{
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+#animate{
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+</style>
+    <title> JavaScript Basic </title>
+    <link href="Favicon.png" type="image/png" rel="icon">
+  </head>
+<body>
+ 
+ <div id="heading">
+<h1>JavaScript Output Below</h1>
+
+  <button type="button" onclick="add()">
+    Add 6 + 5
+  </button>
+
+  <button type="button" onclick="subtract()">
+    Subtract 10 - 3
+</button>
+
+  <button type="button" onclick="multiply()">
+    Multiply 7 * 4
+</button>
+
+  <button type="button" onclick="divide()">
+    Divide 100 / 5
+</button>
+
+  <button type="button" onclick="greeting()">
+    Greeting!
+</button>
+
+<p id="demo">This will change with JavaScript</p>
+
+ </div>
+<br> 
+ <div id="box" onmousemove="moveFunk(event)" onmouseout="clearCoor()">
+
+ </div>
+
+<br>
+
+ <div id="lowerHeading">
+<h1>moveIt Function</h1>
+<button type="button" onclick="moveIt()">moveIt</button>
+<button type="button" onclick="moveItBack()">moveItBack</button>
+<button type="button" onclick="moveItOpposite()">moveItOpposite</button>
+<button type="button" onclick="moveItOppositeBack()">moveItOppositeBack</button>
+  </div>
+<br>
+ <div id="container">
+  <div onmousemove="moveFunk(event)" onmouseout="clearCoor()" id="animate">
+
+  </div>
+ </div>
+
+
+
+
+
+
+  <script>
+
+   function add(){
+     document.getElementById("demo").innerHTML = 6 + 5
+  }
+
+  function subtract(){
+     document.getElementById("demo").innerHTML = 10 - 3
+  }
+
+  function multiply(){
+     document.getElementById("demo").innerHTML = 7 * 4
+  }
+
+  function divide(){
+     document.getElementById("demo").innerHTML = 100 / 5
+  }
+
+  function greeting(){
+     document.getElementById("demo").innerHTML = "Hello World"
+  }
+  
+  function moveFunk(e){
+    let x = e.clientX
+    let y = e.clientY
+    let coor = "Coordinates: (" +x+ "," +y+ ")"
+    document.getElementById("demo").innerHTML = coor
+
+  }
+
+  function clearCoor(){
+   document.getElementById("demo").innerHTML = " "
+  }
+
+  function moveIt() {
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos = 0
+   clearInterval(id)
+   id = setInterval(frame, 5)
+
+     function frame(){
+      if(pos == 250) {
+        clearInterval(id)
+      } else {
+        pos++
+        elem.style.top = pos + "px"
+        elem.style.left = pos + "px"
+      }
+    }
+
+  }
+
+  function moveItBack() {
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos = 250
+   clearInterval(id)
+
+   id = setInterval(frame, 5)
+
+     function frame(){
+      if(pos == 0) {
+        clearInterval(id)
+      } else {
+        pos--
+        elem.style.top = pos + "px"
+        elem.style.left = pos + "px"
+      }
+    }
+
+  }
+
+  function moveItOpposite() {
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos = 0
+   clearInterval(id)
+   id = setInterval(frame, 5)
+
+     function frame(){
+      if(pos == 250) {
+        clearInterval(id)
+      } else {
+        pos++
+        elem.style.top = pos + "px"
+        elem.style.right = pos + "px"
+      }
+    }
+
+  }
+
+  function moveItOppositeBack() {
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos = 250
+   clearInterval(id)
+   id = setInterval(frame, 5)
+
+     function frame(){
+      if(pos == 0) {
+        clearInterval(id)
+      } else {
+        pos--
+        elem.style.top = pos + "px"
+        elem.style.right = pos + "px"
+      }
+    }
+
+  }
+  </script>
+
+</body>
+</html> 
