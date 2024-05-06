@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #B5C18E;
+    --secondary-color: #F7DCB9;
+    --accent-color: #DEAC80;
+    --text-color: #B99470;
+    --dark-text-color: #333;
+    --main-font: "Goldman" , serif;
+}
+
+body{
+  background-color:var(--secondary-color)
+}
+img{
+  border-width: 10%;
+  border-color: black;
+}
+#buttonToNext{
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, 80%);
+}
+
+#instructScreen1 {
+ z-index: 0;
+ border: 2px solid black;
+ display: flex;
+ margin: 0 auto;
+ position: relative;
+ border-radius: 25px;
+}

@@ -5,7 +5,22 @@
     --accent-color: #DEAC80;
     --text-color: #B99470;
     --dark-text-color: #333;
+    --main-font: "Goldman" , serif;
 }
+
+.goldman-regular {
+  font-family: "Goldman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goldman-bold {
+  font-family: "Goldman", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 
 /* Reset and Base Styles */
 body {
@@ -15,8 +30,43 @@ body {
 }
 
 #homeScreen {
+ z-index: 0;
  border: 2px solid black;
  display: flex;
  margin: 0 auto;
+ position: relative;
  border-radius: 25px;
 }
+
+.content {
+  text-align: center;
+  position: relative;
+}
+
+#homeBtn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 80%);
+
+  font-size: 70px;
+  font-family: var(--main-font);
+  color: #8F3832;
+  background-color: #D3F473;
+  border-radius: 25px;
+
+  height: 100px;
+  width: 250px;
+  z-index: 2;
+}
+
+#hammers{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
