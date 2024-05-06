@@ -102,7 +102,7 @@ return;
   this.appendImg = () => {
     img = document.createElement('img');
     let size = 'width:' + height + 'px;height:' + height + 'px;';
-    if (color === 'blue'( {
+    if (color === 'blue' || color === 'green')
       img.setAttribute ('src', 'img/ninja1.png');
         img.setAttribute('style', size);
     container.appendChild(img);
