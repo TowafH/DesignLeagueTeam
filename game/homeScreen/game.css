@@ -1,0 +1,22 @@
+/* Colors */
+:root {
+    --primary-color: #B5C18E;
+    --secondary-color: #F7DCB9;
+    --accent-color: #DEAC80;
+    --text-color: #B99470;
+    --dark-text-color: #333;
+}
+
+/* Reset and Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark-text-color);
+  background-color: var(--secondary-color);
+}
+
+#homeScreen {
+ border: 2px solid black;
+ display: flex;
+ margin: 0 auto;
+ border-radius: 25px;
+}
