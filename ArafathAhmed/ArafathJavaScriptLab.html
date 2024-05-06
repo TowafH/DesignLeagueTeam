@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button{
+background-color: yellow;
+font-family: fantasy;
+}
+body { 
+background-color: lightblue;
+border-size: 3px;
+border-color: blue;
+}
+p {
+font-size: 20px; 
+font-family: cursive;
+}
+button {
+  background-color: darkblue;
+  border: 3px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+#animate{
+background-color:yellow;
+width:50px;
+height:50px;
+position: absolute;
+}
+#container{
+background-color:green;
+width:300px;
+height:300px;
+position:relative;
+}
+
+button:hover {opacity: 1}
+</style
+<title> JavaScript Basic</title>
+</head>
+<body>
+<center>
+<h1>JavaScript Output Below</h1>
+<button type="button" onclick="addition()">
+Add 6+5</button>
+<p id="add">Add them!</p>
+<hr>
+<button type = "button" onclick="subtraction()">
+Subtract 6-5</button>
+<p id="minus">Subtract them!</p>
+<hr>
+<button type = "button" onclick="multiplication()">
+Multiply 6(5)</button>
+<p id="multiply">Multiply them!</p>
+<hr>
+<button type = "button" onclick="division()">
+Divide 6/5</button>
+<p id="divide">Divide them!<p>
+<hr>
+<button type ="button" onclick="helloworld()">
+Hello World</button>
+<p id="demo">This will change with javascript</p>
+<hr>
+<p id="coords">Coordinates</p>
+<div style = "background-color:darkblue; width: 100px; height:100px" 
+onmousemove="moveFunk(event)"
+onmouseout="clearCoor()"></div>
+</center>
+<button type="button"
+onclick="moveIt()">moveIt</button>
+
+<button type="button"
+onclick="moveUp()">moveUp</button>
+
+<button type = "button"
+onclick="moveHoriz()">MoveHoriz</button>
+
+<div id="container">
+<div id="animate"></div>
+</div>
+<script>
+	function moveIt(){
+	let id = null
+	const elem = document.getElementById("animate")
+	let pos=0
+	clearInterval(id)
+	id = setInterval(frame,5)
+	function frame(){
+	if (pos == 250){
+	clearInterval(id)
+	}
+	else{
+	pos++
+	elem.style.top = pos + "px"
+	elem.style.left = pos + "px"
+	}
+	}
+	}
+
+	function moveUp(){
+	let id = null
+	const elem = document.getElementById("animate")
+	let pos = 250
+	clearInterval(id)
+	id = setInterval(frame,5)
+
+	function frame(){
+	if (pos == 0){
+	clearInterval(id)
+	}
+	else{
+	pos--
+	elem.style.top = pos + "px"
+	elem.style.left = pos + "px"
+	}
+	}
+	}
+	
+	function moveHoriz(){
+	let id = null
+	const elem = document.getElementById("animate")
+	let pos = 250
+	clearInterval(id)
+	id = setInterval(frame,5)
+
+	function frame(){
+	if (pos == 0){
+	clearInterval(id)
+	}
+	else{
+	pos--
+	elem.style.top = pos + "px"
+	elem.style.right = pos + "px"
+	}
+	}
+	}
+
+
+	function addition(){
+	document.getElementById("add").innerHTML=6+5
+	}
+	function subtraction(){
+	document.getElementById("minus").innerHTML=6-5
+	}
+	function multiplication(){
+	document.getElementById("multiply").innerHTML=6*5
+	}
+	function division(){
+	document.getElementById("divide").innerHTML=6/5
+	}
+	function helloworld(){
+	document.getElementById("demo").innerHTML="Hello World"
+	}
+function moveFunk(e){
+	let x = e.clientX
+	let y = e.clientY
+	let coor = "Coordinates: (" +x+","+y+")"
+	document.getElementById("coords").innerHTML = coor
+}
+function clearCoor(){
+	document.getElementById("coords").innerHTML = " "
+}
+</script>
+</body>
+</html>
