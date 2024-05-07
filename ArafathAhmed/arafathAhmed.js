@@ -146,6 +146,3 @@ const promptUser = () => {
   this.appendImg();
   this.changeBtns();
 };
-this.appendImg();
-this.changeBtns();
-}
