@@ -14,14 +14,15 @@ img{
   border-width: 10%;
   border-color: black;
 }
-#buttonToNext{
+
+#btnToFollowUpInstructions1 {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 60%;
-  transform: translate(-50%, 80%);
+  width: 100px;
 }
 
-#instructScreen1 {
+#instructScreen1, #instructScreen2 {
  z-index: 0;
  border: 2px solid black;
  display: flex;
